@@ -29,7 +29,7 @@ export default function Game () {
       </li>
     )
   })
-  
+
   return (
     <div className='game'>
       <div className='game-board'>

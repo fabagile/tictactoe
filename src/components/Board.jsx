@@ -10,7 +10,7 @@ export default function Board ({ xIsNext, squares, onPlay }) {
     nextSquares[i] = xIsNext ? 'X' : 'O'
     onPlay(nextSquares)
   }
-  
+
   const winner = calculateWinner(squares)
   let status
   if (winner) {
