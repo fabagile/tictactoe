@@ -14,9 +14,9 @@ export default function Board ({ xIsNext, squares, onPlay }) {
   const winner = calculateWinner(squares)
   let status
   if (winner) {
-    status = 'Winner: ' + winner
+    status = 'Gagnant: ' + winner
   } else {
-    status = 'Next player: ' + (xIsNext ? 'X' : 'O')
+    status = 'Joueur suivant: ' + (xIsNext ? 'X' : 'O')
   }
 
   return (

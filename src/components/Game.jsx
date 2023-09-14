@@ -16,12 +16,12 @@ export default function Game () {
     setCurrentMove(nextMove)
   }
 
-  const moves = history.map((move) => {
+  const moves = history.map((move, i) => {
     let description
-    if (move > 0) {
-      description = 'Go to move #' + move
+    if (i > 0) {
+      description = `Mouvement n°${i + 1}`
     } else {
-      description = 'Go to game start'
+      description = 'Début du jeu'
     }
     return (
       <li key={move}>
