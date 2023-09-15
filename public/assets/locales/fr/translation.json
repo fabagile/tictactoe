@@ -1,0 +1,10 @@
+{
+  "Welcome_to_React": "Bienvenue sur React et react-i18next",
+  "greetings": "Bonjour tout le monde !",
+  "title": "Morpion",
+  "language": "Français",
+  "description_move": "Mouvement n°",
+  "description_start": "Début du jeu",
+  "status_winner": "Gagnant",
+  "status_next_player": "Prochain joueur"
+}

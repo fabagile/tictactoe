@@ -1,7 +1,9 @@
 import { useState } from 'react'
 import Board from './Board'
+import { useTranslation } from 'react-i18next'
 
 export default function Game () {
+  const {t} = useTranslation()
   const [history, setHistory] = useState([Array(9).fill(null)])
   const [currentMove, setCurrentMove] = useState(0)
   const xIsNext = currentMove % 2 === 0
@@ -19,9 +21,9 @@ export default function Game () {
   const moves = history.map((move, i) => {
     let description
     if (i > 0) {
-      description = `Mouvement n°${i + 1}`
+      description = `${t('description_move')}${i + 1}`
     } else {
-      description = 'Début du jeu'
+      description = t('description_start')
     }
     return (
       <li key={move}>

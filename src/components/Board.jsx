@@ -1,7 +1,9 @@
+import { useTranslation } from 'react-i18next'
 import { calculateWinner } from '../utils/board.funcs'
 import Square from './Square'
 
 export default function Board ({ xIsNext, squares, onPlay }) {
+  const {t} = useTranslation()
   const handleClick = (i) => {
     if (squares[i] || calculateWinner(squares)) {
       return
@@ -14,9 +16,9 @@ export default function Board ({ xIsNext, squares, onPlay }) {
   const winner = calculateWinner(squares)
   let status
   if (winner) {
-    status = 'Gagnant: ' + winner
+    status = `${t('status_winner')}: ${winner}`
   } else {
-    status = 'Joueur suivant: ' + (xIsNext ? 'X' : 'O')
+    status = `${t('status_next_player')}: ${xIsNext ? 'X' : 'O'}`
   }
 
   return (

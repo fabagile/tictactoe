@@ -1,0 +1,10 @@
+{
+  "Welcome_to_React": "Welcome to React and react-i18next",
+  "greetings": "Hello world !",
+  "language": "English",
+  "title": "Tic tac toe",
+  "description_move": "Go to move #",
+  "description_start": "Go to game start",
+  "status_winner": "Winner",
+  "status_next_player": "Next player"
+}
