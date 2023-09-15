@@ -2,11 +2,12 @@ export const languages = [
   {
     code: 'en',
     name: 'english',
-    country_code: 'us'
+    countryCode: 'us'
   },
   {
     code: 'fr',
     name: 'français',
-    country_code: 'fr'
+    countryCode: 'fr'
   }
 ]
+export const langCodes = languages.map(({ code }) => code)

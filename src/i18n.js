@@ -2,6 +2,7 @@ import i18n from 'i18next'
 import HttpApi from 'i18next-http-backend'
 import LanguageDetector from 'i18next-browser-languagedetector'
 import { initReactI18next } from 'react-i18next'
+import { langCodes } from './languages'
 
 export default function initInternationalization () {
   i18n
@@ -9,7 +10,7 @@ export default function initInternationalization () {
     .use(HttpApi)
     .use(LanguageDetector)
     .init({
-      supportedLngs: ['en', 'fr'],
+      supportedLngs: langCodes,
       fallbackLng: 'en',
       detection: {
         order: ['cookie', 'htmlTag', 'localStorage', 'path', 'subdomain'],

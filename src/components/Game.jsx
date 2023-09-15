@@ -1,9 +1,9 @@
 import { useState } from 'react'
 import Board from './Board'
-import { useTranslation } from 'react-i18next'
+// import { useTranslation } from 'react-i18next'
 
-export default function Game () {
-  const {t} = useTranslation()
+export default function Game ({ t }) {
+  // const { t } = useTranslation()
   const [history, setHistory] = useState([Array(9).fill(null)])
   const [currentMove, setCurrentMove] = useState(0)
   const xIsNext = currentMove % 2 === 0
@@ -35,7 +35,7 @@ export default function Game () {
   return (
     <div className='game'>
       <div className='game-board'>
-        <Board xIsNext={xIsNext} squares={currentSquares} onPlay={handlePlay} />
+        <Board xIsNext={xIsNext} squares={currentSquares} onPlay={handlePlay} t={t} />
       </div>
       <div className='game-info'>
         <ol>{moves}</ol>

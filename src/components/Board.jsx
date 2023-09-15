@@ -1,9 +1,9 @@
-import { useTranslation } from 'react-i18next'
+// import { useTranslation } from 'react-i18next'
 import { calculateWinner } from '../utils/board.funcs'
 import Square from './Square'
 
-export default function Board ({ xIsNext, squares, onPlay }) {
-  const {t} = useTranslation()
+export default function Board ({ xIsNext, squares, onPlay, t }) {
+  // const { t } = useTranslation()
   const handleClick = (i) => {
     if (squares[i] || calculateWinner(squares)) {
       return
