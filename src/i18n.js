@@ -4,7 +4,7 @@ import LanguageDetector from 'i18next-browser-languagedetector'
 import { initReactI18next } from 'react-i18next'
 import { langCodes } from './languages'
 
-export default function initInternationalization () {
+export default function initI18n () {
   i18n
     .use(initReactI18next) // passes i18n down to react-i18next
     .use(HttpApi)

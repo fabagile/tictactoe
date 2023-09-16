@@ -2,6 +2,7 @@
 import { calculateWinner } from '../utils/board.funcs'
 import Square from './Square'
 
+
 export default function Board ({ xIsNext, squares, onPlay, t }) {
   // const { t } = useTranslation()
   const handleClick = (i) => {

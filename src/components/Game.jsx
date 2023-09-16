@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import Board from './Board'
+import { Button } from 'react-bootstrap'
 // import { useTranslation } from 'react-i18next'
 
 export default function Game ({ t }) {
@@ -27,7 +28,7 @@ export default function Game ({ t }) {
     }
     return (
       <li key={move}>
-        <button onClick={() => jumpTo(move)}>{description}</button>
+        <Button variant='info' onClick={() => jumpTo(move)}>{description}</Button>
       </li>
     )
   })
