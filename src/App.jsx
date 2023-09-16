@@ -7,7 +7,7 @@ import { Container } from 'react-bootstrap'
 const App = () => {
   const { t } = useTranslation()
   return (
-    <Container>
+    <Container fluid="xs">
       <Header t={t} />
       <Game t={t} />
     </Container>

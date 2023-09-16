@@ -2,6 +2,7 @@
 import { Col, Container, Row } from 'react-bootstrap'
 import { calculateWinner } from '../utils/board.funcs'
 import Square from './Square'
+import Status from './Status'
 
 export default function Board ({ xIsNext, squares, onPlay, t }) {
   // const { t } = useTranslation()
@@ -14,17 +15,11 @@ export default function Board ({ xIsNext, squares, onPlay, t }) {
     onPlay(nextSquares)
   }
 
-  const winner = calculateWinner(squares)
-  let status
-  if (winner) {
-    status = `${t('status_winner')}: ${winner}`
-  } else {
-    status = `${t('status_next_player')}: ${xIsNext ? 'X' : 'O'}`
-  }
 
   return (
     <>
-      <div className='status'>{status}</div>
+      <Status t={t} xIsNext={xIsNext} squares={squares} />
+      {/* <div className='status'>{status}</div> */}
       <div className='board-row m-3 '>
         <Container className='mx-auto'>
           <Row className=' gap-0 justify-content-center'>

@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import Board from './Board'
 import { Button, Col, Row } from 'react-bootstrap'
+import History from './History'
 // import { useTranslation } from 'react-i18next'
 
 export default function Game ({ t }) {
@@ -43,10 +44,9 @@ export default function Game ({ t }) {
 
         </Col>
         <Col className='' xs={12} md={7}>
+          <History moves={moves} />
 
-          <div className='game-info'>
-            <ol>{moves}</ol>
-          </div>
+          
         </Col>
       </Row>
     </div>
