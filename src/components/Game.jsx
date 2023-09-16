@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import Board from './Board'
-import { Button } from 'react-bootstrap'
+import { Button, Col, Row } from 'react-bootstrap'
 // import { useTranslation } from 'react-i18next'
 
 export default function Game ({ t }) {
@@ -28,19 +28,27 @@ export default function Game ({ t }) {
     }
     return (
       <li key={move}>
-        <Button variant='info' onClick={() => jumpTo(move)}>{description}</Button>
+        <Button className='my-1' variant='info' onClick={() => jumpTo(move)}>{description}</Button>
       </li>
     )
   })
 
   return (
     <div className='game'>
-      <div className='game-board'>
-        <Board xIsNext={xIsNext} squares={currentSquares} onPlay={handlePlay} t={t} />
-      </div>
-      <div className='game-info'>
-        <ol>{moves}</ol>
-      </div>
+      <Row className='mx-auto'>
+        <Col className='text-center' xs={12} md={5}>
+          <div className='game-board'>
+            <Board xIsNext={xIsNext} squares={currentSquares} onPlay={handlePlay} t={t} />
+          </div>
+
+        </Col>
+        <Col className='' xs={12} md={7}>
+
+          <div className='game-info'>
+            <ol>{moves}</ol>
+          </div>
+        </Col>
+      </Row>
     </div>
   )
 }

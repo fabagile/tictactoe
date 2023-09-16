@@ -74,7 +74,9 @@ body {
   display: grid;
   grid-template-columns: repeat(3, auto);
 } */
-
+.board-row {
+  width: 102px;
+}
 .board-row:after {
   clear: both;
   content: '';
