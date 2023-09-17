@@ -19,7 +19,6 @@ export default function Board ({ xIsNext, squares, onPlay, t }) {
   return (
     <>
       <Status t={t} xIsNext={xIsNext} squares={squares} />
-      {/* <div className='status'>{status}</div> */}
       <div className='board-row m-3 '>
         <Container className='mx-auto'>
           <Row className=' gap-0 justify-content-center'>
