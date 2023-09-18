@@ -1,3 +1,5 @@
+// global
+
 * {
   box-sizing: border-box;
   /* margin: 0;
@@ -11,6 +13,8 @@ body {
   padding: 0;
 }
 
+
+// fonts
 h1 {
   margin-top: 0;
   font-size: 22px;
@@ -49,11 +53,7 @@ ul {
   padding-inline-start: 20px;
 }
 
-* {
-  box-sizing: border-box;
-}
-
-
+// game env 
 .square {
   background: #fff;
   border: 1px solid #999;
@@ -68,6 +68,9 @@ ul {
   text-align: center;
   width: 34px;
 }
+
+// board 
+
 /* .board-row {
   display: grid;
   grid-template-columns: repeat(3, auto);
@@ -84,6 +87,7 @@ ul {
 .status {
   margin-bottom: 10px;
 }
+
 .game {
   display: flex;
   flex-direction: row;
@@ -94,6 +98,6 @@ ul {
   margin-left: 20px; 
 } */
 
-#board, #history {
-  max-width: 200px;
-}
+// #board, #history {
+//   max-width: 200px;
+// }

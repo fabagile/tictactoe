@@ -1,8 +1,8 @@
 {
   "language": "Français",
   "title": "Morpion",
-  "descriptionMove": "Coup n°",
-  "descriptionStart": "Début du jeu",
-  "statusWinner": "Gagnant",
-  "statusNextPlayer": "Joueur suivant"
+  "status": {
+    "winner": "Gagnant",
+    "nextPlayer": "Joueur suivant"
+  }
 }

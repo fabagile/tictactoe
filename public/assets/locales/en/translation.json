@@ -1,8 +1,5 @@
 {
   "language": "English",
   "title": "Tic tac toe",
-  "descriptionMove": "Go to move #",
-  "descriptionStart": "Go to game start",
-  "statusWinner": "Winner",
-  "statusNextPlayer": "Next player"
+  "status": { "winner": "Winner", "nextPlayer": "Next player" }
 }

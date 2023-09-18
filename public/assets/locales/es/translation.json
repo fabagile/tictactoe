@@ -1,8 +1,8 @@
 {
   "language": "Español",
   "title": "Tres en Raya",
-  "descriptionMove": "Dar el golpe #",
-  "descriptionStart": "Il ar comenzio",
-  "statusWinner": "Vencedor",
-  "statusNextPlayer": "Siguiente jugador"
+  "status": {
+    "winner": "Vencedor",
+    "nextPlayer": "Siguiente jugador"
+  }
 }

@@ -1,19 +1,22 @@
 export const languages = [
   {
-    code: "fr",
-    name: "français",
-    countryCode: "fr",
+    code: 'fr',
+    name: 'français',
+    countryCode: 'fr'
   },
   {
-    code: "en",
-    name: "english",
-    countryCode: "us",
-  },
+    code: 'en',
+    name: 'english',
+    countryCode: 'us'
+  }
+]
 
-  // {
-  //   code: "es",
-  //   name: "español",
-  //   countryCode: "es",
-  // },
-];
-export const langCodes = languages.map(({ code }) => code);
+// const es = {
+//   code: "es",
+//   name: "español",
+//   countryCode: "es",
+// };
+
+// languages.push(es)
+
+export const langCodes = languages.map(({ code }) => code)
