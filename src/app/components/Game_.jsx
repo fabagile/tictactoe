@@ -17,25 +17,6 @@ export default function Game ({ t }) {
     setHistory(nextHistory)
     setCurrentMove(nextHistory.length - 1)
   }
-  function jumpTo (nextMove) {
-    setCurrentMove(nextMove)
-  }
-
-  const moves = history.map((move, i) => {
-    let description
-    if (i > 0) {
-      description = `${t('description_move')}${i + 1}`
-    } else {
-      description = t('description_start')
-    }
-    return (
-      <li key={move}>
-        <div className='my-1' variant='info' onClick={() => jumpTo(move)}>
-          {description}
-        </div>
-      </li>
-    )
-  })
 
   return (
     <div className='game'>
@@ -51,7 +32,7 @@ export default function Game ({ t }) {
           </div>
         </Col>
         <Col className='' xs={12} md={7}>
-          <History moves={moves} />
+          <History setCurrentMove={setCurrentMove} history={history} t={t} />
         </Col>
       </Row>
     </div>

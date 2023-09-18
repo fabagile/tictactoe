@@ -3,8 +3,8 @@
   "greetings": "Hello world !",
   "language": "English",
   "title": "Tic tac toe",
-  "description_move": "Go to move #",
-  "description_start": "Go to game start",
-  "status_winner": "Winner",
-  "status_next_player": "Next player"
+  "descriptionMove": "Go to move #",
+  "descriptionStart": "Go to game start",
+  "statusWinner": "Winner",
+  "statusNextPlayer": "Next player"
 }
