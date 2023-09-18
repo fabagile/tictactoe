@@ -3,6 +3,7 @@ import '../styles/App.css'
 
 import Game from './components/page/Game_'
 import Header from './components/layout/Header_'
+import "../styles/main.scss";
 
 // import { Container } from 'react-bootstrap'
 
