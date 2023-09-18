@@ -1,8 +1,8 @@
 // import { useTranslation } from 'react-i18next'
 import { Col, Container, Row } from 'react-bootstrap'
-import { calculateWinner } from '../utils/board.funcs'
-import Square from './Square'
-import Status from './Status'
+import { calculateWinner } from '../../utils/board.funcs'
+import Square from './Game.Board.Square'
+import Status from './Game.Board.Status'
 
 export default function Board ({ xIsNext, squares, onPlay, t }) {
   // const { t } = useTranslation()

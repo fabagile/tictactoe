@@ -4,8 +4,8 @@ import ReactDOM from "react-dom/client";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./styles/index.css";
 
-import App from "./App";
-import initI18n from "./i18n";
+import App from "./app/App";
+import initI18n from "./utils/i18n";
 
 initI18n();
 

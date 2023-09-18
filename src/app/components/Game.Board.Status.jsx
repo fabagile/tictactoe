@@ -1,4 +1,4 @@
-import { calculateWinner } from "../utils/board.funcs";
+import { calculateWinner } from "../../utils/board.funcs";
 
 const Status = ({ squares, t, xIsNext }) => {
   const winner = calculateWinner(squares);

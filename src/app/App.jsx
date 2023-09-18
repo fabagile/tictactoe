@@ -1,10 +1,10 @@
 import { useTranslation } from "react-i18next";
 import { Container } from "react-bootstrap";
 
-import "./styles/App.css";
+import "../styles/App.css";
 
 import Game from "./components/Game";
-import Header from "./components/Header";
+import Header from "./layout/Header";
 
 const App = () => {
   const { t } = useTranslation();

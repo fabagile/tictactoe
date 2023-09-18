@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { Col, Row } from "react-bootstrap";
 
-import Board from "./Board";
-import History from "./History";
+import Board from "./Game.Board";
+import History from "./Game.History";
 // import { useTranslation } from 'react-i18next'
 
 export default function Game({ t }) {

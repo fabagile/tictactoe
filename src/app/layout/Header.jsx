@@ -1,17 +1,19 @@
-import i18next from "i18next";
+// import i18next from "i18next";
 
-import ReactCountryFlag from "react-country-flag";
-import { FaGlobe } from "react-icons/fa6";
-import { Dropdown } from "react-bootstrap";
+// import ReactCountryFlag from "react-country-flag";
+// import { FaGlobe } from "react-icons/fa6";
+// import { Dropdown } from "react-bootstrap";
 
-import { languages } from "../languages";
+// import { languages } from "../utils/languages";
+import LangSelector from "./Header.LangSelector";
 
 function Header({ t }) {
   // const { t } = useTranslation()
   return (
     <header className="container mb-5">
       <nav>
-        <Dropdown className="float-end">
+        <LangSelector />
+        {/* <Dropdown className="float-end">
           <Dropdown.Toggle variant="link" id="dropdown-basic">
             <FaGlobe size="1.5em" />
           </Dropdown.Toggle>
@@ -31,7 +33,7 @@ function Header({ t }) {
               </Dropdown.Item>
             ))}
           </Dropdown.Menu>
-        </Dropdown>
+        </Dropdown> */}
       </nav>
       <h1 className="text-center fs-1">{t("title")}</h1>
     </header>
