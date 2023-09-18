@@ -1,7 +1,7 @@
 const Square = ({ value, onSquareClick }) => (
-  <button className="square" onClick={onSquareClick}>
+  <button className='square' onClick={onSquareClick}>
     {value}
   </button>
-);
+)
 
-export default Square;
+export default Square

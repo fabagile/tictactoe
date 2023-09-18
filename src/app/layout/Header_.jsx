@@ -1,16 +1,9 @@
-// import i18next from "i18next";
+import LangSelector from './Header.LangSelector'
+import Title from './Header.Title'
 
-// import ReactCountryFlag from "react-country-flag";
-// import { FaGlobe } from "react-icons/fa6";
-// import { Dropdown } from "react-bootstrap";
-
-// import { languages } from "../utils/languages";
-import LangSelector from "./Header.LangSelector";
-
-function Header({ t }) {
-  // const { t } = useTranslation()
+function Header ({ t }) {
   return (
-    <header className="container mb-5">
+    <header className='container mb-5'>
       <nav>
         <LangSelector />
         {/* <Dropdown className="float-end">
@@ -35,9 +28,9 @@ function Header({ t }) {
           </Dropdown.Menu>
         </Dropdown> */}
       </nav>
-      <h1 className="text-center fs-1">{t("title")}</h1>
+      <Title t={t} />
     </header>
-  );
+  )
 }
 
-export default Header;
+export default Header

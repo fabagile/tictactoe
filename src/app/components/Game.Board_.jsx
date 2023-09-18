@@ -15,7 +15,6 @@ export default function Board ({ xIsNext, squares, onPlay, t }) {
     onPlay(nextSquares)
   }
 
-
   return (
     <>
       <Status t={t} xIsNext={xIsNext} squares={squares} />
@@ -23,9 +22,10 @@ export default function Board ({ xIsNext, squares, onPlay, t }) {
         <Container className='mx-auto'>
           <Row className=' gap-0 justify-content-center'>
             {squares.map((square, i) => (
-            <Col xs={4} key={i} className=''>
-              <Square value={square} onSquareClick={() => handleClick(i)} />
-            </Col>))}
+              <Col xs={4} key={i} className=''>
+                <Square value={square} onSquareClick={() => handleClick(i)} />
+              </Col>
+            ))}
           </Row>
         </Container>
       </div>
