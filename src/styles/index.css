@@ -1,10 +1,13 @@
 * {
   box-sizing: border-box;
+  /* margin: 0;
+  padding: 0; */
 }
+
 
 body {
   font-family: sans-serif;
-  margin: 20px;
+  margin: 0;
   padding: 0;
 }
 
@@ -50,11 +53,6 @@ ul {
   box-sizing: border-box;
 }
 
-body {
-  font-family: sans-serif;
-  margin: 20px;
-  padding: 0;
-}
 
 .square {
   background: #fff;
@@ -89,8 +87,13 @@ body {
 .game {
   display: flex;
   flex-direction: row;
+  /* justify-content: space-around; */
 }
 
 .game-info {
-  margin-left: 20px;
+  /* margin-left: 20px;  */
+}
+
+#board, #history {
+  max-width: 200px;
 }

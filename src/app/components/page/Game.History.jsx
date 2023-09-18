@@ -21,7 +21,7 @@ const History = ({ setCurrentMove, history, t }) => {
     )
   })
   return (
-    <div className='game-info'>
+    <div id='history' className=''>
       <ol>{moves}</ol>
     </div>
   )

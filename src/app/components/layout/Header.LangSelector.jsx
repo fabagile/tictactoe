@@ -1,10 +1,10 @@
 import { Dropdown } from 'react-bootstrap'
 import { FaGlobe } from 'react-icons/fa6'
-import { languages } from '../../utils/languages'
+import { languages } from '../../../utils/languages'
 import i18next from 'i18next'
 import ReactCountryFlag from 'react-country-flag'
 
-export default function LangSelector () {
+export default function LangSelector ({ currentLang }) {
   return (
     <Dropdown className='float-end'>
       <Dropdown.Toggle variant='link' id='dropdown-basic'>
@@ -14,6 +14,7 @@ export default function LangSelector () {
         {languages.map(({ code, name, countryCode }, i) => (
           <Dropdown.Item
             onClick={() => i18next.changeLanguage(code)}
+            disabled={code === currentLang}
             key={i}
             href='#/action-1'
           >

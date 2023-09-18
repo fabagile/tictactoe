@@ -1,8 +1,10 @@
 // import { useTranslation } from 'react-i18next'
 import { Col, Container, Row } from 'react-bootstrap'
-import { calculateWinner } from '../../utils/board.funcs'
+
 import Square from './Game.Board.Square'
 import Status from './Game.Board.Status'
+
+import { calculateWinner } from '../../utils/game.board.funcs'
 
 export default function Board ({ xIsNext, squares, onPlay, t }) {
   // const { t } = useTranslation()
@@ -16,7 +18,7 @@ export default function Board ({ xIsNext, squares, onPlay, t }) {
   }
 
   return (
-    <>
+    <div id='board'>
       <Status t={t} xIsNext={xIsNext} squares={squares} />
       <div className='board-row m-3 '>
         <Container className='mx-auto'>
@@ -29,6 +31,6 @@ export default function Board ({ xIsNext, squares, onPlay, t }) {
           </Row>
         </Container>
       </div>
-    </>
+    </div>
   )
 }
