@@ -9,11 +9,11 @@ function Header ({ t }) {
   const currentLang = i18next.resolvedLanguage
 
   return (
-    <Navbar expand='lg' className='bg-body-tertiary'>
+    <Navbar expand='xs' className='bg-body-tertiary'>
       <Container fluid='lg' className=''>
         <Navbar.Brand href='/'>{t('title')}</Navbar.Brand>
-        <Navbar.Toggle aria-controls='basic-navbar-nav' />
-        <Navbar.Collapse id='basic-navbar-nav'>
+        {/* <Navbar.Toggle aria-controls='basic-navbar-nav' /> */}
+        {/* <Navbar.Collapse id='basic-navbar-nav'> */}
           <Nav className='me-auto' />
 
           {languages.length > 2
@@ -23,7 +23,7 @@ function Header ({ t }) {
             : (
               <LangSwitch currentLang={currentLang} />
               )}
-        </Navbar.Collapse>
+        {/* </Navbar.Collapse> */}
       </Container>
     </Navbar>
   )

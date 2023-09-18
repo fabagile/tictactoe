@@ -1,7 +1,7 @@
 const Square = ({ value, onSquareClick }) => (
-  <button className='square' onClick={onSquareClick}>
+  <div role='button' className='square' onClick={onSquareClick}>
     {value}
-  </button>
+  </div>
 )
 
 export default Square
