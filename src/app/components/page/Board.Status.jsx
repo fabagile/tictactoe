@@ -6,7 +6,7 @@ const Status = ({ squares, t, xIsNext }) => {
     ? `${t('status.winner')}: ${winner}`
     : `${t('status.nextPlayer')}: ${xIsNext ? 'X' : 'O'}`
 
-  return <div className='text-justify'>{status}</div>
+  return <div className='board__status'>{status}</div>
 }
 
 export default Status
