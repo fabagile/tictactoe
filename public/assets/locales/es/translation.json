@@ -1,6 +1,7 @@
 {
   "language": "Español",
   "title": "Tres en Raya",
+  "replay": "volver a jugar",
   "status": {
     "winner": "Vencedor",
     "nextPlayer": "Siguiente jugador"

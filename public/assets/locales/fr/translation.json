@@ -1,6 +1,7 @@
 {
   "language": "Français",
   "title": "Morpion",
+  "replay": "rejouer",
   "status": {
     "winner": "Gagnant",
     "nextPlayer": "Joueur suivant"

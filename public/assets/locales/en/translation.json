@@ -1,5 +1,6 @@
 {
   "language": "English",
   "title": "Tic tac toe",
+  "replay": "play again",
   "status": { "winner": "Winner", "nextPlayer": "Next player" }
 }

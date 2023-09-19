@@ -1,17 +1,21 @@
-import { useTranslation } from 'react-i18next'
-import '../styles/App.css'
+import { useTranslation } from "react-i18next";
 
-import Header from './components/layout/Header_'
-import Board from './components/page/Board_'
+import Header from "./components/layout/Header_";
+import Board from "./components/page/Board_";
+import Footer from "./components/layout/Footer";
 
 const App = () => {
-  const { t } = useTranslation()
+  const bgColor = "body-tertiary";
+  const { t } = useTranslation();
   return (
     <>
-      <Header t={t} />
-      <Board t={t} />
+      <Header bgColor={bgColor} t={t} />
+      <main>
+        <Board t={t} />
+      </main>
+      <Footer bgColor={bgColor} />
     </>
-  )
-}
+  );
+};
 
-export default App
+export default App;
