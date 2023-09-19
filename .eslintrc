@@ -1,7 +1,0 @@
-{
-  // "extends": ["prettier" ],
-  // "plugins": ["prettier"],
-  "rules": {
-    // Add custom rules here
-  }
-}
