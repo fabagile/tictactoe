@@ -37,9 +37,9 @@ export default function Board ({ t }) {
   }
 
   return (
-    <div className='my-3 mx-1' id='board'>
+    <div className='board' id='board'>
       <Status t={t} xIsNext={xIsNext} squares={squares} />
-      <div className='board-row m-3 justify-content-center'>
+      <div className='board__grid'>
         {squares.map((square, i) => (
           <Square key={i} value={square} onSquareClick={() => handleClick(i)} />
         ))}

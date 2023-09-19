@@ -1,37 +1,6 @@
 @import "./layout";
+@import "./fonts";
 
-// global
-
-// fonts
-h1 {
-  margin-top: 0;
-  font-size: 22px;
-}
-
-h2 {
-  margin-top: 0;
-  font-size: 20px;
-}
-
-h3 {
-  margin-top: 0;
-  font-size: 18px;
-}
-
-h4 {
-  margin-top: 0;
-  font-size: 16px;
-}
-
-h5 {
-  margin-top: 0;
-  font-size: 14px;
-}
-
-h6 {
-  margin-top: 0;
-  font-size: 12px;
-}
 
 code {
   font-size: 1.2em;
@@ -55,6 +24,27 @@ ul {
   padding: 0;
   text-align: center;
   width: 34px;
+}
+
+.board {
+  &__grid {
+    display: grid;
+    grid-template-rows: repeat(3, min-max(100px, 1fr));
+    gap: 10px;
+    &__cell {
+      background-color: antiquewhite;
+      grid-auto-columns: 3em;
+      grid-auto-rows: 3em;
+      place-self: center center;
+      font-size: 2em;
+      border-radius: 8px;
+      -webkit-border-radius: 8px    ;
+      -moz-border-radius: 8px    ;
+      -ms-border-radius: 8px    ;
+      -o-border-radius: 8px    ;
+
+}
+  }
 }
 
 // board
