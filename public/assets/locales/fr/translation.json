@@ -1,6 +1,8 @@
 {
   "language": "Français",
   "title": "Morpion",
+  "sourceCode": "code source",
+  "siteAuthor": "auteur du site",
   "replay": "rejouer",
   "status": {
     "winner": "Gagnant",

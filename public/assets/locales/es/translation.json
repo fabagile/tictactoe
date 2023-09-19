@@ -1,6 +1,8 @@
 {
   "language": "Español",
   "title": "Tres en Raya",
+  "sourceCode": "código fuente",
+  "siteAuthor": "autor del sitio",
   "replay": "volver a jugar",
   "status": {
     "winner": "Vencedor",
