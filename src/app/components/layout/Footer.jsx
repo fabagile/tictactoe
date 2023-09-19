@@ -1,31 +1,18 @@
-import React from "react";
-import { useTranslation } from "react-i18next";
+import Link from '../../utils/Link'
 
 const Footer = ({ bgColor }) => {
-  const { t } = useTranslation();
-  const ghroute = "https://github.com/fabagile";
+  const ghroute = 'https://github.com/fabagile'
   return (
     <footer className={`p-2 text-center bg-${bgColor}`}>
-      <a
-        href={`${ghroute}/tictactoe`}
-        rel="noreferrer"
-        target="_blank"
-        title={t("sourceCode")}
-      >
+      <Link tooltip='sourceCode' route={`${ghroute}/tictactoe`} blank>
         tictactoe
-      </a>{" "}
-      <a
-        href={ghroute}
-        rel="noreferrer"
-        target="_blank"
-        title={t("siteAuthor")}
-      >
-        {" "}
+      </Link>
+      <Link tooltip='siteAuthor' route={ghroute} blank>
         @fabagile
-      </a>{" "}
+      </Link>
       &copy; 2023
     </footer>
-  );
-};
+  )
+}
 
-export default Footer;
+export default Footer
