@@ -1,13 +1,24 @@
-import { calculateWinner, calculateWinningLine } from '../../utils/board.funcs'
+import { findOutWinner } from '../../utils/board.funcs'
 
 import Square from './Board.Grid.Square'
 
 export default function Grid ({ squares, setSquares, xIsNext, setXIsNext }) {
-  const winningLine = calculateWinningLine(squares)
-  const fullLine = winningLine !== null
+  const winner = findOutWinner(squares)
+  let fullLine
+  let player
+  if (winner !== null ) {
+    fullLine = winner.line
+    player = winner.player
+    console.log(fullLine, player)
+  }
+
+  // winner !==null && console.log(winner)
+  // const winningLine = calculateWinningLine(squares)
+  // const fullLine = winner !== null
+  // winner != null && console.log(winner.line)
   
   function handleClick (i) {
-    if (squares[i] || calculateWinner(squares)) {
+    if (squares[i] || findOutWinner(squares)) {
       return
     }
     const nextSquares = squares.slice()
@@ -28,7 +39,7 @@ export default function Grid ({ squares, setSquares, xIsNext, setXIsNext }) {
       {squares.map((square, i) =>
         fullLine
           ? (
-              winningLine.includes(i)
+              winner.line.includes(i)
                 ? (
                   <Square
                     color='text-success'

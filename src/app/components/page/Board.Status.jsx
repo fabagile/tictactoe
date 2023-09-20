@@ -1,9 +1,10 @@
-import { calculateWinner } from '../../utils/board.funcs'
+import { findOutWinner } from '../../utils/board.funcs'
 
 const Status = ({ squares, t, xIsNext }) => {
-  const winner = calculateWinner(squares)
-  const status = winner
-    ? <span className='text-success'>{t('status.winner')}: <strong>{winner}</strong></span>
+  const winner = findOutWinner(squares)
+  
+  const status = winner !==null 
+    ? <span className='text-success'>{t('status.winner')}: <strong>{winner.player}</strong></span>
     : <span className=''>{t('status.nextPlayer')}: {xIsNext ? 'X' : 'O'}</span>
 
   return <div className='board__status'>{status}</div>
