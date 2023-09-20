@@ -1,5 +1,5 @@
-const Square = ({ value, onSquareClick }) => (
-  <div role='button' className='board__grid__cell' onClick={onSquareClick}>
+const Square = ({ value, onSquareClick, color }) => (
+  <div role='button' className={`board__grid__cell ${color}`} onClick={onSquareClick}>
     {value}
   </div>
 )
