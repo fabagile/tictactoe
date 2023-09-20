@@ -1,0 +1,51 @@
+@mixin fonts($ft: 2em) {
+    font-size: $ft;
+}
+@mixin boxes($bx: 2em, $rad: 8px) {
+    line-height: $bx;
+    height: $bx;
+    width: $bx;
+    border-radius: $rad;
+    -webkit-border-radius: $rad;
+    -moz-border-radius: $rad;
+    -ms-border-radius: $rad;
+    -o-border-radius: $rad;
+}
+
+.board {
+    text-align: center;
+
+    &__status {
+        @include fonts();
+        @media screen and (min-width: 756px) {
+            @include fonts($ft: 2.5em);
+        }
+    }
+    &__grid {
+        margin: 2em auto;
+        align-items: center;
+        justify-content: center;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        &__cell {
+            background-color: antiquewhite;
+            @include boxes();
+            @include fonts();
+
+            @media screen and (min-width: 756px) {
+                @include boxes($bx: 2.25em, $rad: 24px);
+                @include fonts(2.5em);
+            }
+        }
+    }
+    &__actions {
+        button {
+            text-transform: uppercase;
+            @include fonts(1.5);
+            @media screen and (min-width: 756px) {
+                @include fonts(2em);
+            }
+        }
+    }
+}

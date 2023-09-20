@@ -7,7 +7,6 @@ import { useState } from 'react'
 import { Button } from 'react-bootstrap'
 
 export default function Board ({ t }) {
-
   // states
   const [xIsNext, setXIsNext] = useState(true)
   const [squares, setSquares] = useState(Array(9).fill(null))
@@ -23,9 +22,12 @@ export default function Board ({ t }) {
 
       <Grid squares={squares} setSquares={setSquares} xIsNext={xIsNext} setXIsNext={setXIsNext} />
 
-      <Button onClick={replay} color='info'>
-        {t('replay')}
-      </Button>
+      <div className='board__actions'>
+
+        <Button onClick={replay} color='info'>
+          {t('replay')}
+        </Button>
+      </div>
     </div>
   )
 }
