@@ -2,7 +2,7 @@ import { useState } from 'react'
 
 import { calculateWinner, calculateWinningLine } from '../../utils/board.funcs'
 
-import Square from './Board.Square'
+import Square from './Board.Grid.Square'
 
 export default function Grid ({ squares, setSquares, xIsNext, setXIsNext }) {
   // states

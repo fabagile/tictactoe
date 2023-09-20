@@ -1,6 +1,6 @@
 // import { useTranslation } from 'react-i18next'
 
-import Grid from './Board.Grid'
+import Grid from './Board.Grid_'
 import Status from './Board.Status'
 
 import { useState } from 'react'
