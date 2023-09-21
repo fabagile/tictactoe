@@ -1,10 +1,11 @@
-@mixin fonts($ft: 2em) {
+@mixin fonts($ft: $ft) {
     font-size: $ft;
 }
-@mixin boxes($bx: 2em, $rad: 8px) {
-    line-height: $bx;
-    height: $bx;
-    width: $bx;
+$ft: 2em;
+@mixin boxes($bx: 2em, $ft: $ft, $rad: 8px) {
+    line-height: calc($ft + 2em);
+    height: calc($ft + 2em);
+    width: calc($ft + 2em);
     border-radius: $rad;
     -webkit-border-radius: $rad;
     -moz-border-radius: $rad;
@@ -14,7 +15,6 @@
 
 .board {
     text-align: center;
-
     &__status {
         @include fonts();
         @media screen and (min-width: 756px) {
@@ -26,16 +26,15 @@
         align-items: center;
         justify-content: center;
         display: grid;
+        width: 240px;
         grid-template-columns: repeat(3, 1fr);
-        gap: 10px;
+        gap: 1em;
         &__cell {
             background-color: antiquewhite;
-            @include boxes();
-            @include fonts();
+            @include boxes($ft);
 
-            @media screen and (min-width: 756px) {
-                @include boxes($bx: 2.25em, $rad: 24px);
-                @include fonts(2.5em);
+            div {
+                @include fonts();
             }
         }
     }
@@ -43,9 +42,23 @@
         button {
             text-transform: uppercase;
             @include fonts(1.5);
-            @media screen and (min-width: 756px) {
-                @include fonts(2em);
+        }
+    }
+    @media screen and (min-width: 756px) {
+        &__status {
+            @include fonts($ft: 2.5em);
+        }
+        &__grid {
+            width: 300px;
+            &__cell {
+                @include boxes($ft: 3em, $rad: 24px);
+                div {
+                    @include fonts(3em);
+                }
             }
+        }
+        &__actions button {
+            @include fonts(2em);
         }
     }
 }

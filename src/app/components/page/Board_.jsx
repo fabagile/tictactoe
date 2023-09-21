@@ -20,11 +20,15 @@ export default function Board ({ t }) {
     <div className='board' id='board'>
       <Status t={t} xIsNext={xIsNext} squares={squares} />
 
-      <Grid squares={squares} setSquares={setSquares} xIsNext={xIsNext} setXIsNext={setXIsNext} />
+      <Grid
+        squares={squares}
+        setSquares={setSquares}
+        xIsNext={xIsNext}
+        setXIsNext={setXIsNext}
+      />
 
-      <div className='board__actions'>
-
-        <Button onClick={replay} color='info'>
+      <div className='board__actions d-grid'>
+        <Button onClick={replay} variant='primary' >
           {t('replay')}
         </Button>
       </div>
