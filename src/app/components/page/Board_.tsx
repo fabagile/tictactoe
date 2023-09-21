@@ -10,21 +10,25 @@ export default function Board ({ t }: {t:Function}) {
   // states
   const [xIsNext, setXIsNext] = useState<Boolean>(true)
   const [squares, setSquares] = useState<Number[]>(Array(9).fill(null))
+  const [moves, setMoves] = useState<Number>(0)
 
   function replay () {
     setXIsNext(true)
     setSquares(Array(9).fill(null))
+    setMoves(0)
   }
 
   return (
     <div className='board' id='board'>
-      <Status t={t} xIsNext={xIsNext} squares={squares} />
+      <Status t={t} xIsNext={xIsNext} squares={squares} moves={moves} />
 
       <Grid
         squares={squares}
         setSquares={setSquares}
         xIsNext={xIsNext}
         setXIsNext={setXIsNext}
+        moves={moves}
+        setMoves={setMoves}
       />
 
       <div className='board__actions d-grid'>

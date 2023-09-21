@@ -4,5 +4,5 @@
   "sourceCode": "source code",
   "siteAuthor": "site author",
   "replay": "play again",
-  "status": { "winner": "Winner", "nextPlayer": "Next player" }
+  "status": { "winner": "Winner", "nextPlayer": "Next player","noWinner": "No winner" }
 }

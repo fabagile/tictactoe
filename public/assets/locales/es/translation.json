@@ -6,6 +6,6 @@
   "replay": "volver a jugar",
   "status": {
     "winner": "Vencedor",
-    "nextPlayer": "Siguiente jugador"
+    "nextPlayer": "Siguiente jugador","noWinner": "Ningún ganador"
   }
 }
