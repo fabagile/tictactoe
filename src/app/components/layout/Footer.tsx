@@ -3,7 +3,7 @@ import Link from '../../utils/Link'
 const Footer = ({ bgColor }: {bgColor: String}) => {
   const ghroute = 'https://github.com/fabagile'
   return (
-    <footer className={`p-2 text-center bg-${bgColor}`}>
+    <footer className={`p-3 text-center bg-${bgColor}`}>
       <Link tooltip='sourceCode' route={`${ghroute}/tictactoe`} blank>
         tictactoe
       </Link>
