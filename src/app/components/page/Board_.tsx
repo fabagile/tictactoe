@@ -6,10 +6,10 @@ import Status from './Board.Status'
 import { useState } from 'react'
 import { Button } from 'react-bootstrap'
 
-export default function Board ({ t }) {
+export default function Board ({ t }: {t:Function}) {
   // states
-  const [xIsNext, setXIsNext] = useState(true)
-  const [squares, setSquares] = useState(Array(9).fill(null))
+  const [xIsNext, setXIsNext] = useState<Boolean>(true)
+  const [squares, setSquares] = useState<Number[]>(Array(9).fill(null))
 
   function replay () {
     setXIsNext(true)

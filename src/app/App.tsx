@@ -7,6 +7,7 @@ import Footer from './components/layout/Footer'
 const App = () => {
   const bgColor = 'body-tertiary'
   const { t } = useTranslation()
+  console.log('t:',typeof t)
   return (
     <>
       <Header bgColor={bgColor} t={t} />

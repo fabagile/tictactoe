@@ -11,7 +11,7 @@ export default function initI18n () {
     .use(LanguageDetector)
     .init({
       supportedLngs: langCodes,
-      lng: document.querySelector('html').lang,
+      lng: document.querySelector('html')!.lang,
       fallbackLng: 'fr',
       detection: {
         order: ['cookie', 'htmlTag', 'localStorage', 'path', 'subdomain'],

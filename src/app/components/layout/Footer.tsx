@@ -1,6 +1,6 @@
 import Link from '../../utils/Link'
 
-const Footer = ({ bgColor }) => {
+const Footer = ({ bgColor }: {bgColor: String}) => {
   const ghroute = 'https://github.com/fabagile'
   return (
     <footer className={`p-2 text-center bg-${bgColor}`}>

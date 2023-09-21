@@ -1,4 +1,6 @@
-export const findOutWinner = squares => {
+
+
+export const findOutWinner = (squares: Number[]) => {
   const lines = [
     [0, 1, 2],
     [3, 4, 5],

@@ -5,7 +5,7 @@ import { languages } from '../../../utils/languages'
 import i18next from 'i18next'
 // import Navlinks from "./Header.NavLinks";
 
-function Header ({ t, bgColor }) {
+function Header ({ t, bgColor }: { t:any, bgColor:any }) {
   const currentLang = i18next.resolvedLanguage
 
   return (

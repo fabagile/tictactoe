@@ -4,7 +4,7 @@ import { languages } from '../../../utils/languages'
 import i18next from 'i18next'
 import ReactCountryFlag from 'react-country-flag'
 
-export default function LangSelector ({ currentLang }) {
+export default function LangSelector ({ currentLang }:{ currentLang:any }) {
   return (
     <Dropdown className='float-end'>
       <Dropdown.Toggle variant='link' id='dropdown-basic'>

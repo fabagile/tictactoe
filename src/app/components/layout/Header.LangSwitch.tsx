@@ -2,7 +2,7 @@ import i18next from 'i18next'
 import { languages } from '../../../utils/languages'
 import ReactCountryFlag from 'react-country-flag'
 
-export default function LangSwitch ({ currentLang }) {
+export default function LangSwitch ({ currentLang }: {currentLang:any}) {
   return (
     <>
       {languages.map(({ code, name, countryCode }, i) => (

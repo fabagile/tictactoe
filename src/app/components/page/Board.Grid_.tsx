@@ -1,10 +1,11 @@
 import { findOutWinner } from '../../utils/board.funcs'
 
 import Square from './Board.Grid.Square'
+// Impossible d'assigner le type 'Dispatch<SetStateAction<Number[]>>' au type 'Number[]'.
 
-export default function Grid ({ squares, setSquares, xIsNext, setXIsNext }) {
+export default function Grid ({ squares, setSquares, xIsNext, setXIsNext }: { squares:Number[], setSquares:any, xIsNext:Boolean, setXIsNext:any }) {
   const winner = findOutWinner(squares)
-  let fullLine
+  let fullLine: Number[]
   let player
   if (winner !== null ) {
     fullLine = winner.line
@@ -17,11 +18,11 @@ export default function Grid ({ squares, setSquares, xIsNext, setXIsNext }) {
   // const fullLine = winner !== null
   // winner != null && console.log(winner.line)
   
-  function handleClick (i) {
+  function handleClick (i:any) {
     if (squares[i] || findOutWinner(squares)) {
       return
     }
-    const nextSquares = squares.slice()
+    const nextSquares:any = squares.slice()
     if (squares[i]) {
       return
     }
@@ -36,10 +37,10 @@ export default function Grid ({ squares, setSquares, xIsNext, setXIsNext }) {
   }
   return (
     <div className='board__grid'>
-      {squares.map((square, i) =>
+      {squares.map((square:any, i) =>
         fullLine
           ? (
-              winner.line.includes(i)
+              winner!.line.includes(i)
                 ? (
                   <Square
                     color='text-success'
@@ -49,14 +50,14 @@ export default function Grid ({ squares, setSquares, xIsNext, setXIsNext }) {
                   )
                 : (
                   <Square
-                    key={i}
+                    key={i} color=''
                     value={square}
                     onSquareClick={() => handleClick(i)}
                   />
                   )
             )
           : (
-            <Square key={i} value={square} onSquareClick={() => handleClick(i)} />
+            <Square key={i} color='' value={square} onSquareClick={() => handleClick(i)} />
             )
       )}
     </div>

@@ -1,7 +1,7 @@
 import React from 'react'
 import { useTranslation } from 'react-i18next'
 
-const Link = ({ children, route, tooltip, blank }) => {
+const Link = ({ children, route, tooltip, blank }:{ children:any, route:any, tooltip:any, blank:any }) => {
   const { t } = useTranslation()
   return (
     <>
