@@ -3,7 +3,8 @@
   "title": "Morpion",
   "sourceCode": "code source",
   "siteAuthor": "auteur du site",
-  "replay": "rejouer",
+  "replay": "Cliquer pour rejouer",
+  "noAvailableAction": "Action indisponible",
   "status": {
     "winner": "Gagnant",
     "nextPlayer": "Joueur suivant","noWinner": "Pas de gagnant"

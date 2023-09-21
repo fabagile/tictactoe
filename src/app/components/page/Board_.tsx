@@ -29,12 +29,12 @@ export default function Board ({ t }: { t: Function }) {
         setMoves={setMoves}
       />
 
-      <Status t={t} xIsNext={xIsNext} squares={squares} moves={moves} />
-      <div className='board__actions d-grid'>
+      <Status t={t} xIsNext={xIsNext} squares={squares} moves={moves} action={replay} />
+      {/* <div className='board__actions d-grid'>
         <Button onClick={replay} variant='primary'>
           {t('replay')}
         </Button>
-      </div>
+      </div> */}
     </div>
   )
 }

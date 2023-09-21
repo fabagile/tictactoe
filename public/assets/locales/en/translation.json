@@ -3,6 +3,7 @@
   "title": "Tic tac toe",
   "sourceCode": "source code",
   "siteAuthor": "site author",
-  "replay": "play again",
+  "noAvailableAction": "Not available",
+  "replay": "Click to replay",
   "status": { "winner": "Winner", "nextPlayer": "Next player","noWinner": "No winner" }
 }

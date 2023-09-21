@@ -4,6 +4,7 @@
   "sourceCode": "código fuente",
   "siteAuthor": "autor del sitio",
   "replay": "volver a jugar",
+  "noAvailableAction": "Aacción no disponible",
   "status": {
     "winner": "Vencedor",
     "nextPlayer": "Siguiente jugador","noWinner": "Ningún ganador"
