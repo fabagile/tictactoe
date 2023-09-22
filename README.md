@@ -1,4 +1,35 @@
-# Getting Started with Create React App
+# Getting Started with TicTacToe ML
+
+## Introduction
+
+This is a react version of the famous ***TicTacToe*** game, available in french and english (french by default); you may select your favorite language by switching the flag on the top of the app.
+
+If you know the game, you may skip next chapter.
+
+### How to play
+
+The goal to achieve is to align the same symbol thrice vertically, horizontally or obliquely.
+
+You can play on your own or with a friend.
+
+Choose the symbol you want to play with: *X* or *O*; the game starts with *X*.
+
+Then fill the grid, using your character; this one changes on each move, consequently turn and player. You can't replace, neither remove, a full cell.
+
+There are nine empty cells at the game start. If all are full and that no line has been completed, the game is over.
+
+### Display and layout.
+
+You can see that the board is divided in two sections: the grid and a message box. Each time a cell is filled, the message changes. You may touch this box to restart after each game, never if the current one is still in progress.
+
+### Languages
+
+Actually, **french** and **english** are the only available languages. Some will come later (tell me in my [mailbox](mailto:fabagile@outlook.fr) if you want me to add yours.)
+
+**And now, enjoy** 😀
+
+<!-- 
+## Project info
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -67,4 +98,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 ### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify) -->

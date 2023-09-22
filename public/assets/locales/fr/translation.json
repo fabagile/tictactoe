@@ -1,12 +1,18 @@
 {
   "language": "Français",
   "title": "Morpion",
-  "sourceCode": "code source",
-  "siteAuthor": "auteur du site",
-  "replay": "Cliquer pour rejouer",
-  "noAvailableAction": "Action indisponible",
   "status": {
     "winner": "Gagnant",
-    "nextPlayer": "Joueur suivant","noWinner": "Pas de gagnant"
+    "nextPlayer": "Joueur suivant",
+    "noWinner": "Pas de gagnant"
+  },
+  "source": {
+    "sourceCode": "code source",
+    "siteAuthor": "auteur du site",
+    "helpPage": "page d'aide"
+  },
+  "actions": {
+    "replay": "Cliquer pour rejouer",
+    "noAvailableAction": "Action indisponible"
   }
 }

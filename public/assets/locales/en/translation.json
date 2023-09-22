@@ -1,9 +1,18 @@
 {
   "language": "English",
   "title": "Tic tac toe",
-  "sourceCode": "source code",
-  "siteAuthor": "site author",
-  "noAvailableAction": "Not available",
-  "replay": "Click to replay",
-  "status": { "winner": "Winner", "nextPlayer": "Next player","noWinner": "No winner" }
+  "source": {
+    "sourceCode": "source code",
+    "siteAuthor": "site author",
+    "helpPage": "help page"
+  },
+  "actions": {
+    "helpPage": "help page",
+    "noAvailableAction": "Not available"
+  },
+  "status": {
+    "winner": "Winner",
+    "nextPlayer": "Next player",
+    "noWinner": "No winner"
+  }
 }

@@ -28,7 +28,7 @@ const Status = ({
   const status =
     winner !== null ? (
       <Alert
-        title={t('replay')}
+        title={t('actions.replay')}
         role='button'
         onClick={action}
         className='text-success'
@@ -39,7 +39,7 @@ const Status = ({
       </Alert>
     ) : moves !== 9 ? (
       <Alert
-        title={t('noAvailableAction')}
+        title={t('actions.noAvailableAction')}
         onClick={displayAlertMessage}
         className='text-center'
         variant='light'
@@ -49,7 +49,7 @@ const Status = ({
       </Alert>
     ) : (
       <Alert
-        title={t('replay')}
+        title={t('actions.replay')}
         role='button'
         onClick={action}
         className='text-danger  '

@@ -1,12 +1,18 @@
 {
   "language": "Español",
   "title": "Tres en Raya",
-  "sourceCode": "código fuente",
-  "siteAuthor": "autor del sitio",
-  "replay": "volver a jugar",
-  "noAvailableAction": "Aacción no disponible",
   "status": {
     "winner": "Vencedor",
-    "nextPlayer": "Siguiente jugador","noWinner": "Ningún ganador"
+    "nextPlayer": "Siguiente jugador",
+    "noWinner": "Ningún ganador"
+  },
+  "source": {
+    "sourceCode": "código fuente",
+    "siteAuthor": "autor del sitio",
+    "helpPage": "página de ayuda"
+  },
+  "actions": {
+    "replay": "volver a jugar",
+    "noAvailableAction": "Aacción no disponible"
   }
 }
