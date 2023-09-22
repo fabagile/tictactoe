@@ -2,13 +2,22 @@
 @import "./fonts";
 @import "./board";
 
-
 code {
   font-size: 1.2em;
 }
 
 ul {
   padding-inline-start: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  &:hover {
+    color: navy;
+    // font-weight: 400;
+    text-decoration: underline dotted;
+  }
 }
 
 // game env
