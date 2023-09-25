@@ -1,8 +1,9 @@
 import { useTranslation } from 'react-i18next'
 
 import Header from './components/layout/Header_'
-import Board from './components/page/Board_'
+import Board from './components/templates/Board_'
 import Footer from './components/layout/Footer'
+import Home from './routes'
 
 const App = () => {
   const bgColor = 'body-tertiary'
@@ -10,9 +11,9 @@ const App = () => {
   
   return (
     <>
-      <Header bgColor={bgColor} t={t} />
+      <Header bgColor={bgColor} />
       <main>
-        <Board t={t} />
+        <Home />
       </main>
       <Footer bgColor={bgColor} />
     </>

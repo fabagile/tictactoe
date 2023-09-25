@@ -3,10 +3,12 @@ import LangSelector from './Header.LangSelector'
 import LangSwitch from './Header.LangSwitch'
 import { languages } from '../../../utils/languages'
 import i18next from 'i18next'
+import { useTranslation } from 'react-i18next'
 // import Navlinks from "./Header.NavLinks";
 
-function Header ({ t, bgColor }: { t:any, bgColor:any }) {
+function Header ({bgColor }: {bgColor:any }) {
   const currentLang = i18next.resolvedLanguage
+  const {t} = useTranslation()
 
   return (
     <Navbar expand='xs' className={`bg-${bgColor}`}>

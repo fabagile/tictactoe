@@ -1,4 +1,4 @@
-// import { useTranslation } from 'react-i18next'
+import { useTranslation } from 'react-i18next'
 
 import Grid from './Board.Grid_'
 import Status from './Board.Status'
@@ -6,7 +6,8 @@ import Status from './Board.Status'
 import { useState } from 'react'
 import { Button } from 'react-bootstrap'
 
-export default function Board ({ t }: { t: Function }) {
+export default function Board () {
+  const {t} =useTranslation()
   // states
   const [xIsNext, setXIsNext] = useState<Boolean>(true)
   const [squares, setSquares] = useState<Number[]>(Array(9).fill(null))
@@ -29,7 +30,7 @@ export default function Board ({ t }: { t: Function }) {
         setMoves={setMoves}
       />
 
-      <Status t={t} xIsNext={xIsNext} squares={squares} moves={moves} action={replay} />
+      <Status xIsNext={xIsNext} squares={squares} moves={moves} action={replay} />
       {/* <div className='board__actions d-grid'>
         <Button onClick={replay} variant='primary'>
           {t('replay')}
